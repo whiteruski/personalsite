@@ -1,0 +1,19 @@
+<div class="box" ng-controller="SkillsCtrl">
+    <h2>Skills</h2>
+    <?php echo $this->url('api', array(
+//        'controller' => '',
+//                'formatter' => 'json',
+        'id' => 1
+    )); ?>
+    <div class="skills">
+        <div ng-repeat="skill in skills">
+            <div class="item-skills" data-percent="1.00">{{skill}}</div>
+        </div>
+        <div class="skills-legend clearfix">
+            <div class="legend-left legend">Beginner</div>
+            <div class="legend-left legend"><span>Proficient</span></div>
+            <div class="legend-right legend"><span>Expert</span></div>
+            <div class="legend-right legend">Master</div>
+        </div>
+    </div>
+</div>
