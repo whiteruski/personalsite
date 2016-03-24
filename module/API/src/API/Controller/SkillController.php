@@ -7,9 +7,14 @@ use Zend\EventManager\EventManagerInterface;
 use Zend\Http\Response;
 use Zend\View\Model\JsonModel;
 use Zend\Mvc\Controller\AbstractRestfulController;
+use Zend\View\Model\ViewModel;
 
 class SkillController extends AbstractRestfulController
 {
+    public function indexAction()
+    {
+        return new ViewModel();
+    }
 
     public function getList()
     {

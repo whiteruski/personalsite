@@ -9,7 +9,7 @@ myApp.controller('SkillsCtrl', ['$scope', '$http', function($scope, $http) {
 
     $http({
         method: 'GET',
-        url: '/api/Skill',
+        url: '/api/skill',
         headers: {
             'Content-Type': 'application/json'
         }

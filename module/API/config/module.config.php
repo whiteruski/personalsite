@@ -5,7 +5,7 @@ namespace API;
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Skill' => 'API/Controller/SkillController',
+            'Skill' => 'API\Controller\SkillController',
         ),
     ),
 
@@ -13,14 +13,14 @@ return array(
         'routes' => array(
 
             'api' => array(
-                'type'    => 'segment',
+                'type'    => 'Segment',
                 'options' => array(
-                    'route'    => '/api/Skill[/:id]',
+                    'route'    => '/api/skill[/:id]',
                     'constraints' => array(
                         'id'     => '[0-9]+',
                     ),
                     'defaults' => array(
-                        'controller' => 'API\Controller\SkillController',
+                        'controller' => 'Skill',
                     ),
                 ),
             ),
