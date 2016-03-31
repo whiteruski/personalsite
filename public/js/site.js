@@ -30,47 +30,34 @@ var myApp = angular.module('ResumeApp',[]);
 
 
 myApp.controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
-    $scope.skills = [];
-    $scope.languages = [];
-    $scope.hobbies = [];
+
+    var setScopeList = function(controller, callback) {
+        $http({
+            method: 'GET',
+            url: '/api/' + controller,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).success(function (data) {
+            callback(data);
+        });
+
+    };
 
     // Get skills
-    $http({
-        method: 'GET',
-        url: '/api/skill',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).success(function (data) {
+    setScopeList('skill', function(data) {
         $scope.skills = data;
     });
 
     // Get languages
-    $http({
-        method: 'GET',
-        url: '/api/language',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).success(function (data) {
+    setScopeList('language', function(data) {
         $scope.languages = data;
     });
 
     // Get hobbies
-    $http({
-        method: 'GET',
-        url: '/api/hobby',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).success(function (data) {
+    setScopeList('hobby', function(data) {
         $scope.hobbies = data;
     });
-
-    var setScopeList = function(controller, scopeVar) {
-
-
-    }
 
 
 }]);
