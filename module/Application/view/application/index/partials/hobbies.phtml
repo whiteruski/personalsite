@@ -1,6 +1,6 @@
 <div class="box">
     <h2>Hobbies</h2>
-    <div class="hobby">Photography</div>
-    <div class="hobby">Fitness</div>
-    <div class="hobby">Programming</div>
+    <div ng-repeat="hobby in hobbies">
+        <div class="hobby">{{hobby.title}}</div>
+    </div>
 </div>

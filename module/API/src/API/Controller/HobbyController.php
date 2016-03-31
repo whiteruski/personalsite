@@ -9,7 +9,7 @@ use Zend\View\Model\ViewModel;
 use Doctrine\ORM\Query;
 
 
-class SkillController extends AbstractRestfulController
+class HobbyController extends AbstractRestfulController
 {
     public function indexAction()
     {
@@ -20,7 +20,7 @@ class SkillController extends AbstractRestfulController
     {
         $em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
 
-        $skills = $em->getRepository('API\Entity\Skill')
+        $skills = $em->getRepository('API\Entity\Hobby')
             ->createQueryBuilder('e')
             ->select('e')
             ->getQuery()
@@ -28,13 +28,5 @@ class SkillController extends AbstractRestfulController
 
         return new JsonModel($skills);
     }
-
-//    public function get($id)
-//    {
-//        return new JsonModel(
-//            array('title' => 'Test', 'proficiency' => 1)
-//        );
-//    }
-
 
 }

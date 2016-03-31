@@ -6,6 +6,8 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Skill' => 'API\Controller\SkillController',
+            'Language' => 'API\Controller\LanguageController',
+            'Hobby' => 'API\Controller\HobbyController',
         ),
     ),
 
@@ -15,7 +17,7 @@ return array(
             'api' => array(
                 'type'    => 'Segment',
                 'options' => array(
-                    'route'    => '/api/skill[/:id]',
+                    'route'    => '/api/[:controller][/:id]',
                     'constraints' => array(
                         'id'     => '[0-9]+',
                     ),
@@ -25,7 +27,6 @@ return array(
                 ),
             ),
 
-
         ), // routes
     ),
 
@@ -33,9 +34,7 @@ return array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
         'doctype'                  => 'HTML5',
-//        'template_path_stack' => array(
-//            'api' => __DIR__ . '/../view',
-//        ),
+
         'strategies' => array(
             'ViewJsonStrategy'
         )
