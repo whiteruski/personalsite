@@ -5,12 +5,12 @@ namespace API\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Skill
+ * Experience
  *
- * @ORM\Table(name="skill")
+ * @ORM\Table(name="experience")
  * @ORM\Entity
  */
-class Skill
+class Experience
 {
     /**
      * @var integer
@@ -24,23 +24,30 @@ class Skill
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=100, nullable=false)
+     * @ORM\Column(name="time", type="string", length=100, nullable=false)
+     */
+    private $time = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=500, nullable=false)
      */
     private $title = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=500, nullable=true)
+     * @ORM\Column(name="description", type="string", length=9000, nullable=false)
      */
     private $description = '';
 
     /**
-     * @var float
+     * @var string
      *
-     * @ORM\Column(name="proficiency", type="float", precision=10, scale=0, nullable=false)
+     * @ORM\Column(name="company", type="string", length=100, nullable=true)
      */
-    private $proficiency = '0';
+    private $company;
 
 
 
@@ -55,11 +62,35 @@ class Skill
     }
 
     /**
+     * Set time
+     *
+     * @param string $time
+     *
+     * @return Experience
+     */
+    public function setTime($time)
+    {
+        $this->time = $time;
+
+        return $this;
+    }
+
+    /**
+     * Get time
+     *
+     * @return string
+     */
+    public function getTime()
+    {
+        return $this->time;
+    }
+
+    /**
      * Set title
      *
      * @param string $title
      *
-     * @return Skill
+     * @return Experience
      */
     public function setTitle($title)
     {
@@ -83,7 +114,7 @@ class Skill
      *
      * @param string $description
      *
-     * @return Skill
+     * @return Experience
      */
     public function setDescription($description)
     {
@@ -103,26 +134,26 @@ class Skill
     }
 
     /**
-     * Set proficiency
+     * Set company
      *
-     * @param float $proficiency
+     * @param string $company
      *
-     * @return Skill
+     * @return Experience
      */
-    public function setProficiency($proficiency)
+    public function setCompany($company)
     {
-        $this->proficiency = $proficiency;
+        $this->company = $company;
 
         return $this;
     }
 
     /**
-     * Get proficiency
+     * Get company
      *
-     * @return float
+     * @return string
      */
-    public function getProficiency()
+    public function getCompany()
     {
-        return $this->proficiency;
+        return $this->company;
     }
 }

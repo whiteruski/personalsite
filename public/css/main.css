@@ -349,7 +349,18 @@ MEDIA
   }
 }
 @media (min-width: 1200px) {
-  #education .description{
+  #education .description {
     width: 90%;
   }
+}
+
+/*******************************************
+TWEAKS
+*******************************************/
+.item-hobbies {
+  display: inline-block;
+}
+
+.library:before{
+  content: "\f02d";
 }

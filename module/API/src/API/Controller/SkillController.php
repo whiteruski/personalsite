@@ -5,17 +5,11 @@ namespace API\Controller;
 use Zend\Http\Response;
 use Zend\View\Model\JsonModel;
 use Zend\Mvc\Controller\AbstractRestfulController;
-use Zend\View\Model\ViewModel;
 use Doctrine\ORM\Query;
 
 
 class SkillController extends AbstractRestfulController
 {
-    public function indexAction()
-    {
-        return new ViewModel();
-    }
-
     public function getList()
     {
         $em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
@@ -23,6 +17,7 @@ class SkillController extends AbstractRestfulController
         $skills = $em->getRepository('API\Entity\Skill')
             ->createQueryBuilder('e')
             ->select('e')
+            ->where('e.proficiency > 0')
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY);
 
@@ -35,6 +30,5 @@ class SkillController extends AbstractRestfulController
 //            array('title' => 'Test', 'proficiency' => 1)
 //        );
 //    }
-
 
 }

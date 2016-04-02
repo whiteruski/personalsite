@@ -8,6 +8,8 @@ return array(
             'Skill' => 'API\Controller\SkillController',
             'Language' => 'API\Controller\LanguageController',
             'Hobby' => 'API\Controller\HobbyController',
+            'Experience' => 'API\Controller\ExperienceController',
+            'Library' => 'API\Controller\LibraryController',
         ),
     ),
 

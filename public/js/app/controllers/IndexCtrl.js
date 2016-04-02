@@ -17,11 +17,13 @@ myApp.controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
     // Get skills
     setScopeList('skill', function(data) {
         $scope.skills = data;
+        updateStyles();
     });
 
     // Get languages
     setScopeList('language', function(data) {
         $scope.languages = data;
+        updateStyles();
     });
 
     // Get hobbies
@@ -29,5 +31,14 @@ myApp.controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.hobbies = data;
     });
 
+    // Get exp
+    setScopeList('experience', function(data) {
+        $scope.experiences = data;
+    });
+
+    // Get libraries and frameworks
+    setScopeList('library', function(data) {
+        $scope.libraries = data;
+    });
 
 }]);
