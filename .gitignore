@@ -1,6 +1,5 @@
 local.php
 *.local.php
-/vendor/
 /node_modules/
 .idea
 /config/autoload/*.global.php
