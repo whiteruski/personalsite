@@ -10,8 +10,10 @@ use Doctrine\ORM\Query;
 
 class SkillController extends AbstractRestfulController
 {
+
     public function getList()
     {
+
         $em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
 
         $skills = $em->getRepository('API\Entity\Skill')
@@ -23,12 +25,5 @@ class SkillController extends AbstractRestfulController
 
         return new JsonModel($skills);
     }
-
-//    public function get($id)
-//    {
-//        return new JsonModel(
-//            array('title' => 'Test', 'proficiency' => 1)
-//        );
-//    }
 
 }
