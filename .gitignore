@@ -2,7 +2,7 @@ local.php
 *.local.php
 /node_modules/
 .idea
-/config/autoload/*.global.php
+#/config/autoload/*.global.php
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
