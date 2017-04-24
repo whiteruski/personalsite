@@ -3,54 +3,56 @@ msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-05 22:17-0700\n"
-"PO-Revision-Date: 2012-10-20 15:20+0100\n"
-"Last-Translator: Sven Anders Robbestad <robbestad@gmail.com>\n"
-"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
-"Language: en_US\n"
+"PO-Revision-Date: 2013-10-02 13:35+0200\n"
+"Last-Translator: Maksym Kobieliev <maximaximums@gmail.com>\n"
+"Language-Team: Maximaximums@gmail.com <maximaximums@gmail.com>\n"
+"Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../view/layout/layout.phtml:6 ../view/layout/layout.phtml:33
-msgid "Skeleton Application"
-msgstr "Skjelettapplikasjon"
+msgid "Skeleton ResumeWeb"
+msgstr "Skeleton ResumeWeb"
 
 #: ../view/layout/layout.phtml:36
 msgid "Home"
-msgstr "Hjem"
+msgstr "Головна"
 
 #: ../view/layout/layout.phtml:50
 msgid "All rights reserved."
-msgstr "Alle rettigheter reservert."
+msgstr "Всі права застережено."
 
 #: ../view/application/index/index.phtml:2
 #, php-format
 msgid "Welcome to %sZend Framework 2%s"
-msgstr "Velkommen til %sZend Framework 2%s"
+msgstr "Вітаємо у %sZend Framework 2%s"
 
 #: ../view/application/index/index.phtml:3
 #, php-format
 msgid ""
 "Congratulations! You have successfully installed the %sZF2 Skeleton "
-"Application%s. You are currently running Zend Framework version %s. This "
+"ResumeWeb%s. You are currently running Zend Framework version %s. This "
 "skeleton can serve as a simple starting point for you to begin building your "
 "application on ZF2."
 msgstr ""
-"Gratulerer! Du har installert  %sZF2 Skjelettapplikasjon%s, Du bruker "
-"akkurat nå versjon %s av Zend Framework. Dette skjelettet kan brukes som et "
-"enkelt utgangspunkt når du begynner å bygge din applikasjon med ZF2."
+"Вітаємо! Ви успішно встановили %sZF2 Skeleton ResumeWeb%s. У Вас "
+"встановлено Zend Framework версії %s. Цей каркас може слугувати простою "
+"відправною точкою, щоб почати розробку Вашого застосунку на ZF2."
 
 #: ../view/application/index/index.phtml:4
 msgid "Fork Zend Framework 2 on GitHub"
-msgstr "Forgren Zend Framework 2 på GitHub"
+msgstr "Fork Zend Framework 2 на GitHub"
 
 #: ../view/application/index/index.phtml:10
 msgid "Follow Development"
-msgstr "Følg Utviklingen"
+msgstr "Слідкуйте за розробкою"
 
 #: ../view/application/index/index.phtml:11
 #, php-format
@@ -61,19 +63,19 @@ msgid ""
 "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource for "
 "staying up to date with the latest developments!"
 msgstr ""
-"ZF2 er i aktiv utvikling. Hvis du er interessert i å følge utviklingen så "
-"finnes det en spesiell ZF2-portal på den offisielle hjemmesiden til Zend "
-"Framework som inneholder lenker til ZF2 %swiki%s, %sdev blog%s, %sissue "
-"tracker%s, og mye mer. Det er en flott ressurs for deg som vil holde deg "
-"oppdatert!"
+"Zend Framework 2 активно розвивається. Якщо Ви зацікавлені у відслідкуванні "
+"розробки ZF2, на офіційному сайті Zend Framework існує спеціальний портал "
+"ZF2, що надає ланки на ZF2 %sвікі%s, %sблоґ розробників%s, %sсистему "
+"відстеження проблем%s, та багато іншого. Це - чудовий ресурс для того, щоб "
+"залишатися в курсі останніх розробок!"
 
 #: ../view/application/index/index.phtml:12
 msgid "ZF2 Development Portal"
-msgstr "ZF2 Utviklingsportal"
+msgstr "Портал розробників ZF2"
 
 #: ../view/application/index/index.phtml:16
 msgid "Discover Modules"
-msgstr "Oppdag Moduler"
+msgstr "Дізнайтеся про модулі"
 
 #: ../view/application/index/index.phtml:17
 #, php-format
@@ -83,18 +85,17 @@ msgid ""
 "%s. The site is currently live and currently contains a list of some of the "
 "modules already available for ZF2."
 msgstr ""
-"Nettsamfunnet arbeider med å utvikle en spesiell samfunnsside som kan tjene "
-"som et bibliotek og galleri for ZF2-moduler. Prosjektet er tilgjengelig %spå "
-"GitHub%s. Nettstedet  inneholder for tiden en liste med enkelte av modulene "
-"som er tilgjengelig for Zend Framework 2."
+"Спільнота працює над розробкою сайту, що слугує репозиторієм та галереєю для "
+"модулів ZF2. Проект доступний %sна GitHub%s. Наразі сайт активний і містить "
+"перелік деяких модулів, що вже доступні для ZF2."
 
 #: ../view/application/index/index.phtml:18
 msgid "Explore ZF2 Modules"
-msgstr "Utforsk ZF2-moduler"
+msgstr "Дізнатися про модулі ZF2"
 
 #: ../view/application/index/index.phtml:22
 msgid "Help &amp; Support"
-msgstr "Hjelp &amp; Støtte"
+msgstr "Допомога та підтримка"
 
 #: ../view/application/index/index.phtml:23
 #, php-format
@@ -104,81 +105,80 @@ msgid ""
 "feedback you may have regarding the beta releases. Alternatively, you may "
 "subscribe and post questions to the %smailing lists%s."
 msgstr ""
-"Hvis du trenger hjelp eller støtte mens du utvikler med ZF2 så kan du nå oss "
-"via IRC: %s#zftalk on Freenode%s. Vi hører gjerne fra deg om du har "
-"spørsmål eller tilbakemeldinger på betautgavene. Du kan også abonnere og "
-"stille spørsmål på våre %smailinglister%s."
+"Якщо Вам потрібна допомога або підтримка в розрозбці з ZF2, можете "
+"сконтактувати з нами по IRC: %s#zftalk на Freenode%s. Ми дуже хочемо знати, "
+"які запитання або пропозиції Ви маєте стосовно бета-релізів. Крім того, Ви "
+"можете підписатися та задавати питання в %sсписках розсилки%s."
 
 #: ../view/application/index/index.phtml:24
 msgid "Ping us on IRC"
-msgstr "Ping oss på IRC"
+msgstr "Приєднатися до IRC"
 
 #: ../view/error/index.phtml:1
 msgid "An error occurred"
-msgstr "En feil har oppstått"
+msgstr "Трапилася помилка"
 
 #: ../view/error/index.phtml:8
 msgid "Additional information"
-msgstr "Ytterligere informasjon"
+msgstr "Додаткова інформація"
 
 #: ../view/error/index.phtml:11 ../view/error/index.phtml:35
 msgid "File"
-msgstr "Fil"
+msgstr "Файл"
 
 #: ../view/error/index.phtml:15 ../view/error/index.phtml:39
 msgid "Message"
-msgstr "Beskjed"
+msgstr "Повідомлення"
 
 #: ../view/error/index.phtml:19 ../view/error/index.phtml:43
 #: ../view/error/404.phtml:55
 msgid "Stack trace"
-msgstr "Stakkspor"
+msgstr "Розгортка стека"
 
 #: ../view/error/index.phtml:29
 msgid "Previous exceptions"
-msgstr "Forrige unntak"
+msgstr "Попередні винятки"
 
 #: ../view/error/index.phtml:58
 msgid "No Exception available"
-msgstr "Ingen unntak tilgjengelig"
+msgstr "Немає винятка"
 
 #: ../view/error/404.phtml:1
 msgid "A 404 error occurred"
-msgstr "En 404 feil oppsto"
+msgstr "Помилка 404"
 
 #: ../view/error/404.phtml:10
 msgid "The requested controller was unable to dispatch the request."
-msgstr "Den valgte kontrolleren kunne ikke håndtere forespørselen."
+msgstr "Запитуваний контролер не зміг надіслати запит."
 
 #: ../view/error/404.phtml:13
 msgid ""
 "The requested controller could not be mapped to an existing controller class."
 msgstr ""
-"Den valgte kontrolleren kunne ikke knyttes opp mot en eksisterende "
-"kontrollerklasse."
+"Не вдалося співвіднести запитуваний контролер з наявним класом контролера."
 
 #: ../view/error/404.phtml:16
 msgid "The requested controller was not dispatchable."
-msgstr "Den forspurte kontrolleren kunne ikke brukes."
+msgstr "Запитуваний контролер не доступний."
 
 #: ../view/error/404.phtml:19
 msgid "The requested URL could not be matched by routing."
-msgstr "Den angitte URL kunne ikke finnes i rutingoppsettet"
+msgstr "Не вдалося знайти напрямок для запитуваного URL."
 
 #: ../view/error/404.phtml:22
 msgid "We cannot determine at this time why a 404 was generated."
 msgstr ""
-"På dette tidspunkt kan vi ikke bestemme årsaken til at en 404 ble generert."
+"В даний момент ви не можемо визначити, чому було згенеровано помилку 404."
 
 #: ../view/error/404.phtml:34
 msgid "Controller"
-msgstr "Kontroller"
+msgstr "Контролер"
 
 #: ../view/error/404.phtml:41
 #, php-format
 msgid "resolves to %s"
-msgstr "løser til %s"
+msgstr "розгортається в %s"
 
 #: ../view/error/404.phtml:51
 msgid "Exception"
-msgstr "Unntak"
+msgstr "Виняток"
