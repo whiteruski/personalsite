@@ -12,8 +12,8 @@ namespace Application;
 return array(
     'controllers' => array(
         'invokables' => array(
-            'ResumeWeb\Controller\Index' => Controller\IndexController::class,
-//            'ResumeWeb\Controller\Skill' => Controller\SkillController::class,
+            'Application\Controller\Index' => Controller\IndexController::class,
+//            'Application\Controller\Skill' => Controller\SkillController::class,
         ),
     ),
 
@@ -26,7 +26,7 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller'    => 'ResumeWeb\Controller\Index',
+                        'controller'    => 'Application\Controller\Index',
                         'action'        => 'index'
                     ),
                 ),
