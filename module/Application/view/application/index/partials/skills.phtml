@@ -2,7 +2,9 @@
     <h2>Skills</h2>
     <div class="skills">
         <div ng-repeat="skill in skills">
-            <div class="item-skills" data-percent="{{skill.proficiency}}">{{skill.title}}</div>
+            <div class="item-skills" data-percent="{{skill.proficiency}}">
+            {{skill.title}} <span ng-if="skill.description" class="skills-description">({{skill.description}})</span>
+            </div>
         </div>
         <div class="skills-legend clearfix">
             <div class="legend-left legend">None</div>
