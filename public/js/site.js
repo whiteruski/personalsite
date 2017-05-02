@@ -34,6 +34,7 @@ $(function(){
     var domain = 'gmail.com';
 
     document.getElementById('email').innerHTML = un + '@' + domain;
+    document.getElementById('email-footer').innerHTML = un + '@' + domain;
 });
 
 

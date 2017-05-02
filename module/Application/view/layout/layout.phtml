@@ -34,8 +34,10 @@
                 <?php echo $this->content; ?>
             </div>
         </div>
-        <div class="row">
-            &copy; <?php echo date("Y"); ?> xenadeveloper@gmail.com
+        <div class="container">
+            <div class="row c-footer">
+                &copy; <?php echo date("Y"); ?> <span id="email-footer"></span>
+            </div>
         </div>
 
         <?php echo $this->inlineScript() ?>

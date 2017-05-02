@@ -364,3 +364,8 @@ TWEAKS
 .library:before{
   content: "\f02d";
 }
+
+.c-footer {
+    text-align: center;
+    color: white;
+}
