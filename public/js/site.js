@@ -30,7 +30,7 @@ window.onresize = function() {
 $(function(){
     // Set email to avoid spam
     // TODO: contact form instead
-    var un = 'xenasdev';
+    var un = 'xenadeveloper';
     var domain = 'gmail.com';
 
     document.getElementById('email').innerHTML = un + '@' + domain;
