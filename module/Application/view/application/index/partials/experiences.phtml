@@ -1,5 +1,5 @@
 <div class="box">
-    <h2>Experiences</h2>
+    <h2>Experience</h2>
     <div ng-repeat="experience in experiences">
         <div class="job clearfix">
             <div class="col-xs-3">
@@ -8,7 +8,7 @@
             </div>
             <div class="col-xs-9">
                 <div class="profession">{{experience.title}}</div>
-                <div class="description">{{experience.description}}</div>
+                <div class="description" ng-bind-html="experience.description">{{experience.description}}</div>
             </div>
         </div>
     </div>
