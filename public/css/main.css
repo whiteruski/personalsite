@@ -369,3 +369,11 @@ TWEAKS
     text-align: center;
     color: white;
 }
+
+ul {
+    padding: 15px;
+}
+
+.skills-description {
+  font-style: italic;
+}

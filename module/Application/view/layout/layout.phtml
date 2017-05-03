@@ -27,13 +27,13 @@
         ; ?>
     </head>
     <body ng-app="ResumeApp">
-        <div class="container">
+        <div class="container" ng-controller="IndexCtrl">
             <?php echo $this->partial('partials/header.phtml'); ?>
 
-            <div class="row" ng-controller="IndexCtrl">
+            <div class="row">
                 <?php echo $this->content; ?>
             </div>
-            
+
             <div class="row c-footer">
                 &copy; <?php echo date("Y"); ?> <span id="email-footer"></span>
             </div>
