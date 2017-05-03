@@ -42,7 +42,7 @@ var myApp = angular.module('ResumeApp',[]);
 
 
 
-myApp.controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
+myApp.controller('IndexCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
 
     var setScopeList = function(controller, callback) {
         $http({
@@ -76,6 +76,10 @@ myApp.controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
 
     // Get exp
     setScopeList('experience', function(data) {
+        angular.forEach(data, function(value, key) {
+          value.description = $sce.trustAsHtml(value.description);
+        });
+
         $scope.experiences = data;
     });
 
