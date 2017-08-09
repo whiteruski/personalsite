@@ -8,3 +8,7 @@ local.php
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+*.DS_Store
+*.php~
+personalsite.zip
